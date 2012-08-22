@@ -1,0 +1,6 @@
+#!/bin/sh
+
+branch=`git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+if [ $branch = master ]; then
+    (afplay ~/lib/FinalFantasyVictory.mp3 &) > /dev/null 2>&1
+fi
