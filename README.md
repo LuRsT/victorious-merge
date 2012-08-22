@@ -1,4 +1,5 @@
-== Victorious Merge ==
+Victorious Merge
+----------------
 
 Done with your feature? Got ship-its on your code review? It's time to merge
 to master! And that calls for some fanfare.
