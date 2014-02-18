@@ -9,4 +9,8 @@ theme after a successful merge into master. Put post-merge in .git/hooks, then
 put FinalFantasyVictory.mp3 into ~/lib, and finally, revel in the glory of
 victory.
 
-Requires afplay (installed by default on OS X).
+Requires `afplay` (installed by default on OS X).
+
+Or
+
+`mplayer` if you're using Linux

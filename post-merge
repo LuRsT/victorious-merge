@@ -2,9 +2,16 @@
 
 echo $GIT_REFLOG_ACTION
 
+KERNEL_NAME=$(uname -s);
+if [[ $KERNEL_NAME == "Darwin" ]]; then
+    PLAYER="afplay"
+else
+    PLAYER="mplayer"
+fi
+
 if [ "$GIT_REFLOG_ACTION" != pull ]; then
     branch=`git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
     if [ "$branch" = master ]; then
-	(afplay ~/lib/FinalFantasyVictory.mp3 &) > /dev/null 2>&1
+        ($PLAYER ~/lib/FinalFantasyVictory.mp3 &) > /dev/null 2>&1
     fi
 fi
