@@ -3,7 +3,7 @@
 echo $GIT_REFLOG_ACTION
 
 KERNEL_NAME=$(uname -s);
-if [[ $KERNEL_NAME == "Darwin" ]]; then
+if [ "$KERNEL_NAME" = "Darwin" ]; then
     PLAYER="afplay"
 else
     PLAYER="mplayer"
